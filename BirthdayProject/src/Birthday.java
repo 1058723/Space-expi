@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 /**
- * Name:
- * Period:
- * Date Last Revised:
+ * Name: Sailesh
+ * Period: 3
+ * Date Last Revised: 11/17/26
  * Unit 3 - The Birthday Project
  * 
  * Program Description:
@@ -15,10 +15,13 @@ public class Birthday {
     }
     
     public static void printIntroduction() {
-    	
+    	System.out.print("absoluteDay");
     }
     
     public static int getMonth(Scanner input) {
+    	
+    	
+    	
     	return 0;
     }
     
