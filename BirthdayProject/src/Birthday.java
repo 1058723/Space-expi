@@ -29,7 +29,7 @@ public class Birthday {
     	int maxDay = daysInMonth(month);
     	System.out.printf("What is the day   (1-%d)?",maxDay);
     	int Day = input.nextInt();
-    	
+    	s
     	return Day;
     }
     
