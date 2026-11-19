@@ -6,7 +6,8 @@ import java.util.Scanner;
  * Date Last Revised: 11/17/26
  * Unit 3 - The Birthday Project
  * 
- * Program Description:
+ * Program Description: We are tasked to make a program
+ * to find the exact days away the users birthday is and what specific day it is on.
  * 
  */
 public class Birthday {
@@ -54,7 +55,6 @@ public class Birthday {
     	System.out.printf("%d/%d is the day #%d of 365%n", month, day, sum);
     	return sum;
     }
-    
     public static void printNextBirthday(int absToday, int absBirth) {    	
     if(absToday == absBirth) {
     	System.out.println("Happy birthday!");
@@ -65,7 +65,3 @@ public class Birthday {
     else {
     	System.out.printf("Your next birthday is in %d days.%n", absBirth - absToday)
     }
-   
-    }
-    
-}
