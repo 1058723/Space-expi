@@ -34,16 +34,38 @@ public class Birthday {
     }
     
     public static int daysInMonth(int month) {
-    	if(month ==  )
+    	if(month == 10 || month == 1 || month == 3 || month == 5 || 
+    			month == 7 || month == 8 || month == 12) {
+    		return 31;
+    	}
+    	if(month == 9 || month == 6 || month == 4 || month == 11) {
+    		return 30;
+    	}
+    	if(month == 2) {
+    		return 28;
+    	}
     	
-    	return 0;
-    }
-    
     public static int absoluteDay(int month, int day) {
-    	return 0;
+    	int sum = 0;
+    	for(int i = 1; i < month; i++) {
+    		sum += daysInMonth(i);
+    	}
+    	sum += day
+    	System.out.printf("%d/%d is the day #%d of 365%n", month, day, sum);
+    	return sum;
     }
     
-    public static void printNextBirthday(int absToday, int absBirth) {
-    	
+    public static void printNextBirthday(int absToday, int absBirth) {    	
+    if(absToday == absBirth) {
+    	System.out.println("Happy birthday!");
     }
+    if(absToday == absBirth - 1) {
+    	System.out.println("Wow, your birthday is tomorrow!")
+    }
+    else {
+    	System.out.printf("Your next birthday is in %d days.%n", absBirth - absToday)
+    }
+   
+    }
+    
 }
