@@ -13,6 +13,18 @@ import java.util.Scanner;
 public class Birthday {
     public static void main(String[] args) {
     	Scanner input = new Scanner(System.in);
+    	printIntroduction();
+    	System.out.println("Please enter today's date:");
+    	 int monthToday = getMonth(input);
+    int dayToday =	getDay(input, monthToday);
+    int absToday = absoluteDay(monthToday, dayToday);
+    System.out.println("Please enter your birthday:");
+    int monthBirth = getMonth(input);
+    int dayBirth = getDay(input, monthBirth);
+    int absBirth = absoluteDay(monthBirth, dayBirth);
+   printNextBirthday(absToday, absBirth);
+    	
+    	
     }
     
     public static void printIntroduction() {
@@ -58,12 +70,15 @@ public class Birthday {
     if(absToday == absBirth) {
     	System.out.println("Happy birthday!");
     }
-    if(absToday == absBirth - 1) {
+    else if(absToday == absBirth - 1) {
     	System.out.println("Wow, your birthday is tomorrow!");
     }
     else {
-    	System.out.printf("Your next birthday is in %d days.%n", absBirth - absToday);
-    }
+    	if(absBirth - absToday > 0) {
+    		System.out.printf("Your next birthday is in %d days.%n", absBirth - absToday);
+    	}
+    	
+    } 
     
     }
     }
