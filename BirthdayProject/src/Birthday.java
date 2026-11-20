@@ -42,16 +42,15 @@ public class Birthday {
     	if(month == 9 || month == 6 || month == 4 || month == 11) {
     		return 30;
     	}
-    	if(month == 2) {
     		return 28;
-    	}
+    }
     	
     public static int absoluteDay(int month, int day) {
     	int sum = 0;
     	for(int i = 1; i < month; i++) {
     		sum += daysInMonth(i);
     	}
-    	sum += day
+    	sum += day;
     	System.out.printf("%d/%d is the day #%d of 365%n", month, day, sum);
     	return sum;
     }
@@ -66,4 +65,5 @@ public class Birthday {
     	System.out.printf("Your next birthday is in %d days.%n", absBirth - absToday);
     }
     
+    }
     }
