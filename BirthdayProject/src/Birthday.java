@@ -60,8 +60,10 @@ public class Birthday {
     	System.out.println("Happy birthday!");
     }
     if(absToday == absBirth - 1) {
-    	System.out.println("Wow, your birthday is tomorrow!")
+    	System.out.println("Wow, your birthday is tomorrow!");
     }
     else {
-    	System.out.printf("Your next birthday is in %d days.%n", absBirth - absToday)
+    	System.out.printf("Your next birthday is in %d days.%n", absBirth - absToday);
+    }
+    
     }
